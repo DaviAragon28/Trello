@@ -1,31 +1,210 @@
 * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0;
+    font-family: 'Open Sans', sans-serif;    padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #eeebff;
+}
+
+main{
+    padding: 0 180px 20px;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
-    box-shadow: 1px 1px 5px #00000080;
-    padding: 20px;
+    padding: 0 100px;
+    background-color: white;
+    transition: box-shadow 1s ease;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
+    align-items: center;
+}
+
+
+header nav ul .quitar{
+    padding: 0px;
+}
+
+header nav ul li .logo {
+    width: 110px;
+    height: 40px;
+    object-fit: contain;
 }
 
 header nav ul li {
-    padding-right: 20px;
+    padding: 15px 25px;
+    font-size: 17px;
 }
 
 header nav ul .get {
-    background-color: rgb(0, 72, 255);
+    background-color:  rgb(0, 101, 255);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
 }
 
+
+ul li .arrow {
+    width: 8px;
+    height: 8px;
+}
+
+
+
 header nav .first-ul li:hover {
-    color: blue;
+    color: rgb(0, 101, 255);
     cursor: pointer;
+    
+}
+header nav:hover{
+    box-shadow: 1px 10px 20px #00000069;
+    transition: all 1s ease;
+}
+
+.section_1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+main section .div-one {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+main section div h2{
+    font-size: 45px;
+    font-weight: 400;
+}
+
+
+main section div p{
+    font-size: 20px;
+}
+
+main section div form input, 
+main section div form button{
+    border-style: none;
+    border-radius: 5px;
+    margin: 10px 10px 30px 0;
+    padding: 20px 10px;
+   
+}
+
+main section div form input{
+    border: 1px solid #ccc;
+    width: 400px;
+    
+}
+main section div form button{
+    
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 101, 255);
+    font-size: 17px;
+    transition: background .2s ease;
+    cursor: pointer;
+}
+
+main section div form button:hover {
+    background-color: rgb(7, 71, 166);
+    transition: background .5s ease;
+}
+
+
+
+
+main section .watch-video {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main section .watch-video:hover img {
+    transform: translateX(5px);
+    transition: transform .5s ease;
+}
+main section div a{
+    font-size: 17px;
+    color: rgb(0, 101, 255);
+    
+}
+
+main section .watch-video img {
+    width: 24px;
+    height: 24px;
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+section img {
+    width: 350px;
+}
+
+.section_2 {
+    padding: 35px 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.section_2 .div-three {
+display: flex;
+gap: 20px
+
+}
+
+.section_2 div .img_1{
+
+    width: 100px;
+    height: 100px;
+    
+}
+
+.section_2 .div-three div .boton_1{
+    padding: 10px 25px;
+    font-size: 17px;
+    background-color:  rgb(0, 101, 255);
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    width: max-content;
+
+}
+
+.section_2 .div-three div{
+    display: flex;
+    flex-direction: column;    
+    gap: 20px;
+    
+}
+
+
+.section_2{
+    display: flex;
+    justify-content: space-between
+}
+
+.section_2 .div-three div h1{
+    font-size: 24px;
+}
+
+.section_2 .div-three div p{
+    font-size: 16px;
+    width: 253px;
+}
+
+
+hr {
+    background-color: rgb(255, 251, 251);
+    color: rgb(255, 251, 251);  
+    border: 1px solid rgba(197, 191, 191, 0.728)
 }
